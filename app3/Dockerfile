@@ -31,13 +31,15 @@ RUN printf '%s\n' \
     '</Directory>' \
     >> /etc/apache2/apache2.conf
 
+# Expõe a porta corretamente
+EXPOSE ${PORT}
+
 # Apache deve permanecer em primeiro plano
 CMD ["apache2-foreground"]
 
     echo '</Directory>' >> /etc/apache2/apache2.conf
 
-# Expõe a porta corretamente
-EXPOSE ${PORT}
+
 
 # Inicia o Apache
 CMD ["apache2-foreground"]
