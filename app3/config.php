@@ -1,9 +1,9 @@
 <?php
 // Configurações de conexão
 $host = getenv('DB_HOST') ?: 'localhost';
-$dbname = getenv('DB_NAME') ?: 'seu_banco_de_dados';
-$user = getenv('DB_USER') ?: 'seu_usuario';
-$password = getenv('DB_PASSWORD') ?: 'sua_senha';
+$dbname = getenv('DB_NAME') ?: 'mysql';
+$user = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASSWORD') ?: '';
 
 try {
     // Criar a conexão PDO
