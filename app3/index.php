@@ -1,6 +1,6 @@
 <?php
 // Inclui o arquivo de configuração com a conexão
-require_once('../config.php');
+require_once('config.php');
 
 // Verifica se o formulário foi enviado
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
